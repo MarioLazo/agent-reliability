@@ -177,7 +177,7 @@ easier commit.
 This is the runnable half of Part 2 of a three-part curriculum. Six notebooks
 work today, offline and deterministically.
 
-- **Part 1 · [From Vibe Coding to Agent Engineering](https://github.com/MarioLazo/vibe-coding-to-agent-engineering)**: the introduction. Free, public, and it ends where most courses end: you have built an agent and it does the thing.
+- **Part 1 · [From Vibe Coding to Agent Engineering](https://github.com/MarioLazo/vibe-coding-to-agent-engineering)**: the introduction. It ends where most courses end: you have built an agent and it does the thing.
 - **Part 2 · this**: everything after it works.
 - **Part 3 · Voice, Multimodal and Complex Intent**: coming soon. `05_voice` is the first of it.
 
