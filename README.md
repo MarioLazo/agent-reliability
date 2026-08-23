@@ -12,8 +12,14 @@
 ![tests](https://img.shields.io/badge/tests-85-brightgreen?style=flat-square)
 ![deps](https://img.shields.io/badge/dependencies-none-blue?style=flat-square)
 ![api key](https://img.shields.io/badge/API%20key-not%20required-blue?style=flat-square)
+![status](https://img.shields.io/badge/status-beta-orange?style=flat-square)
 
 </div>
+
+<!-- status:reliability-advanced -->
+**Part 2 is in beta.** 16 of 17 modules are written and 7 of 17 have a runnable demo. The rest are being built in the open.
+<!-- /status -->
+
 
 ---
 
@@ -164,12 +170,16 @@ easier commit.
 
 ## Status, stated plainly
 
-**This is the runnable half of Part 2 of a three-part curriculum, and it is in
-development.** Six notebooks work. The full course is 17 modules; 7 have code.
+<!-- status:reliability-advanced -->
+**Part 2 is in beta.** 16 of 17 modules are written and 7 of 17 have a runnable demo. The rest are being built in the open.
+<!-- /status -->
+
+This is the runnable half of Part 2 of a three-part curriculum. Six notebooks
+work today, offline and deterministically.
 
 - **Part 1 · [From Vibe Coding to Agent Engineering](https://github.com/MarioLazo/vibe-coding-to-agent-engineering)**: the introduction. Free, public, and it ends where most courses end: you have built an agent and it does the thing.
 - **Part 2 · this**: everything after it works.
-- **Part 3 · Voice, Multimodal and Complex Intent**: in development. `05_voice` is the first of it.
+- **Part 3 · Voice, Multimodal and Complex Intent**: coming soon. `05_voice` is the first of it.
 
 <br>
 <br>
