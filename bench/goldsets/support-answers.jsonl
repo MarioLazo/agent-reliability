@@ -1,0 +1,20 @@
+{"id":"q01","output":"1854","reference":"1854","label":"pass","note":"exact"}
+{"id":"q02","output":"Paris","reference":"Paris","label":"pass","note":"exact"}
+{"id":"q03","output":"Lisbon","reference":"Madrid","label":"fail","note":"wrong, plausible, same category"}
+{"id":"q04","output":"7 business days","reference":"7 business days","label":"pass","note":"exact"}
+{"id":"q05","output":"1912","reference":"1911","label":"fail","note":"off by one, the case a blind judge waves through"}
+{"id":"q06","output":"Yes, refunds are available within 30 days","reference":"Yes, refunds are available within 30 days","label":"pass"}
+{"id":"q07","output":"Yes, refunds are available within 90 days","reference":"Yes, refunds are available within 30 days","label":"fail","note":"one number wrong, everything else identical"}
+{"id":"q08","output":"Contact support at the help centre","reference":"Contact support at the help centre","label":"pass"}
+{"id":"q09","output":"The device supports Bluetooth 5.2","reference":"The device supports Bluetooth 5.2","label":"pass"}
+{"id":"q10","output":"The device supports Bluetooth 4.0","reference":"The device supports Bluetooth 5.2","label":"fail","note":"confident and wrong"}
+{"id":"q11","output":"Standard shipping is free over $50","reference":"Standard shipping is free over $50","label":"pass"}
+{"id":"q12","output":"Your warranty covers parts and labour","reference":"Your warranty covers parts and labour","label":"pass"}
+{"id":"q13","output":"Your warranty covers parts only","reference":"Your warranty covers parts and labour","label":"fail","note":"omission, not fabrication"}
+{"id":"q14","output":"Reset by holding the side button for ten seconds","reference":"Reset by holding the side button for ten seconds","label":"pass"}
+{"id":"q15","output":"The account closes at end of billing period","reference":"The account closes at end of billing period","label":"pass"}
+{"id":"q16","output":"Model number A2342","reference":"Model number A2342","label":"pass"}
+{"id":"q17","output":"Model number A2343","reference":"Model number A2342","label":"fail","note":"single digit, high consequence"}
+{"id":"q18","output":"Support hours are 9am to 6pm CT","reference":"Support hours are 9am to 6pm CT","label":"pass"}
+{"id":"q19","output":"The subscription renews annually","reference":"The subscription renews annually","label":"pass"}
+{"id":"q20","output":"Two year limited warranty","reference":"Two year limited warranty","label":"pass"}

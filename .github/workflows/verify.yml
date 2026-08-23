@@ -1,0 +1,45 @@
+name: course verify
+
+# A course about verification whose own artifacts are verified on every push is
+# an argument you cannot make with prose. This is that argument, in 20 lines.
+#
+# No install step and no cache, deliberately. The harness is stdlib-only, and a
+# workflow that needed a dependency would quietly disprove the claim it exists
+# to support.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          # The floor, not the latest. If it breaks on 3.10 it is broken for
+          # readers on 3.10, and Colab is not always current.
+          python-version: "3.10"
+
+      - name: No dependencies were installed, and that is the point
+        run: python -c "import sys; print(sys.version); print('stdlib only')"
+
+      - name: make verify
+        working-directory: .
+        run: make verify
+
+      - name: No em dashes
+        working-directory: .
+        run: |
+          # A house rule, enforced rather than remembered. It has been broken
+          # four times this project by the person who wrote it down.
+          if grep -rn "—" agenteng bench tools tests notebooks/src README.md 2>/dev/null; then
+            echo "::error::em dash found. Use a comma, a period, parentheses or a hyphen."
+            exit 1
+          fi
+          echo "clean"
