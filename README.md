@@ -48,7 +48,8 @@ make verify        # 85 tests, 6 notebooks, under 5 seconds
 
 No `pip install`. No API key. No network. If that surprises you, that is the point.
 
----
+<br>
+<br>
 
 ## Why reliability, and not capability
 
@@ -96,7 +97,8 @@ implementation.
 **Reliability is a property of what you build around the model.** That is the
 half nobody teaches, and it is what this is.
 
----
+<br>
+<br>
 
 ## The notebooks
 
@@ -111,7 +113,8 @@ Every one runs offline, deterministically, in about ten seconds.
 | **[05 · Voice](notebooks/05_voice.ipynb)** | Latency is a correctness property. The model is a third of the budget |
 | **[06 · Benchmarking](notebooks/06_benchmarking.ipynb)** | A leaderboard row that names a model is measuring `model × harness × substrate` |
 
----
+<br>
+<br>
 
 ## The keystone: a model that fails on cue
 
@@ -134,7 +137,8 @@ print(score(task, run_agent(agent, files=task.files)))
 *harness detects* a failure. It proves nothing about how often a real model
 *produces* one. Those are different claims needing different instruments.
 
----
+<br>
+<br>
 
 ## Four rules that shaped every decision
 
@@ -155,7 +159,8 @@ pass a blind judge by luck, that a verifier never wins on cost-efficiency, and
 that a probe set can pass by accident. Tuning those away would have been the
 easier commit.
 
----
+<br>
+<br>
 
 ## Status, stated plainly
 
@@ -166,7 +171,8 @@ development.** Six notebooks work. The full course is 17 modules; 7 have code.
 - **Part 2 · this**: everything after it works.
 - **Part 3 · Voice, Multimodal and Complex Intent**: in development. `05_voice` is the first of it.
 
----
+<br>
+<br>
 
 ## License
 
