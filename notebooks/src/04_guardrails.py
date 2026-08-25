@@ -221,4 +221,4 @@ print(alert_on_repeated_denials(defended) or "under threshold with 1 denial")
 #
 # ---
 #
-# Part of *Agent Reliability Engineering*. Previous: **03 · Delegation**.
+# Part of *Agent Reliability Engineering*. Previous: **03 · Delegation**. Next: **05 · Voice**.

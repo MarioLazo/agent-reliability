@@ -156,6 +156,23 @@ for name, state in [
 # be **asking**, not acting, and that threshold is yours to defend with a curve
 # exactly like the approval-gate one.
 
+# %%
+# Figures in this notebook that the harness does NOT produce.
+# They come from outside literature, so they carry their source here rather
+# than sitting bare in the prose. The harness-produced numbers are everything
+# printed by a cell below.
+SOURCES = {
+    "readback detection (90 / 63 / 50 percent)":
+        "FAA and ICAO readback/hearback research",
+    "utterance error rate (1 to 2 percent)":
+        "FAA readback error analysis",
+    "contributing factors":
+        "SKYbrary, read-back or hear-back",
+}
+
+for _figure, _source in SOURCES.items():
+    print(f"{_figure}\n    source: {_source}")
+
 # %% [markdown]
 # ## 4 · Readback, and its ceiling
 #
@@ -166,6 +183,11 @@ for name, state in [
 # **It still leaks.** Controllers catch about **90%** of pilot readback errors
 # en route, **63%** in a tower, and **50%** on radar approach. One to two
 # percent of utterances carry an error to begin with.
+#
+# *These four figures are not produced by this harness.* They are reported in
+# FAA and ICAO readback/hearback research, and they are listed with their
+# sources in the `SOURCES` cell above. Everything printed below this line is
+# computed here.
 
 # %%
 print(f"{'environment':16} | {'detection':>9} | {'escaped':>7} | {'escape rate':>11}")
@@ -248,4 +270,4 @@ print(LIVE_PATH)
 #
 # ---
 #
-# Part of *Agent Reliability Engineering*, Part 3. Previous: **04 · Guardrails**.
+# Part of *Agent Reliability Engineering*. Previous: **04 · Guardrails**. Next: **06 · Benchmarks and the Oracle Problem**.

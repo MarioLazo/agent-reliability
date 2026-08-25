@@ -1,11 +1,14 @@
 # Agent Engineering: the course harness.
 # Stdlib only. No virtualenv, no install step, no network.
 
-.PHONY: verify test bench notebooks nb-check clean
+.PHONY: verify quick test bench notebooks nb-check clean
 
 ## verify: the whole gate. Run this before every commit.
 verify: test nb-check bench
 	@echo "OK: harness tested, notebooks current, benchmark reproduces."
+
+## quick: the fast loop. Tests only, no notebooks, no benchmark.
+quick: test
 
 ## test: the harness grades code, so the harness gets graded too.
 test:

@@ -49,10 +49,17 @@ does nothing a `for` loop and a `set` could not have done.
 ```bash
 git clone https://github.com/MarioLazo/agent-reliability
 cd agent-reliability
-make verify        # 85 tests, 6 notebooks, under 5 seconds
+make quick         # the 85 tests on their own
+make verify        # the tests, all 6 notebooks, and the benchmark
 ```
 
 No `pip install`. No API key. No network. If that surprises you, that is the point.
+
+**On timing.** `make quick` is the fast loop; `make verify` is the gate and does
+real work: it executes every notebook and reproduces the benchmark. On the
+machine this was last measured, `make quick` took about 20 seconds and `make
+verify` about 30. **Your number will differ, so measure it rather than trust
+this sentence:** `time make verify`.
 
 <br>
 <br>

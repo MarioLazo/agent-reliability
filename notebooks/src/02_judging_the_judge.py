@@ -18,10 +18,21 @@
 #
 # It is the software-testing move applied one level up. Mutation testing breaks
 # the code and asks whether the tests notice. This breaks the reference and asks
-# whether the judge notices. Meta industrialised the first at 9,095 mutants.
-# Almost nobody ships the second.
+# whether the judge notices. Meta industrialised the first at 9,095 mutants
+# (Meta, FSE 2025 - see the `SOURCES` cell below; this harness does not
+# produce that figure). Almost nobody ships the second.
 #
 # We are going to run it, and then we are going to break it.
+
+# %%
+# Figures in this notebook that the harness does NOT produce.
+SOURCES = {
+    "9,095 mutants (mutation testing at industrial scale)":
+        "Meta, FSE 2025",
+}
+
+for _figure, _source in SOURCES.items():
+    print(f"{_figure}\n    source: {_source}")
 
 # %%
 import pathlib
@@ -212,4 +223,4 @@ print(table([
 #
 # ---
 #
-# Part of *Agent Engineering*. Previous: **01 · Evaluating Agent Work**.
+# Part of *Agent Reliability Engineering*. Previous: **01 · Evaluating Agent Work**. Next: **03 · Delegation**.

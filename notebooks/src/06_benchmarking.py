@@ -122,6 +122,16 @@ for h in HARNESSES:
 # practice. Each was chosen for a real reason, and each silently deleted the
 # agent's self-correction loop.
 
+# %%
+# Figures in this notebook that the harness does NOT produce.
+SOURCES = {
+    "UTBoost SWE-bench re-scoring (36 / 345 / 40.9% / 24.4% / 18 / 11)":
+        "UTBoost, ACL 2025, arXiv:2506.09289",
+}
+
+for _figure, _source in SOURCES.items():
+    print(f"{_figure}\n    source: {_source}")
+
 # %% [markdown]
 # ## The second trap: execution is not an escape
 #
@@ -134,6 +144,10 @@ for h in HARNESSES:
 # insufficient tests and 345 accepted patches were simply wrong**, impacting
 # 40.9% of SWE-Bench Lite and 24.4% of SWE-Bench Verified entries, moving 18
 # and 11 rankings respectively.
+#
+# *Those six figures are UTBoost's, not this harness's* (ACL 2025,
+# [arXiv:2506.09289](https://arxiv.org/abs/2506.09289); see the `SOURCES`
+# cell above).
 #
 # Those patches passed. The fixture said yes. The fixture was wrong.
 #

@@ -233,4 +233,4 @@ print(f"\nchain for comparison: {_chain(0.9):.3f} reliability at 3.00 cost "
 #
 # ---
 #
-# Part of *Agent Reliability Engineering*. Previous: **02 · Judging the Judge**.
+# Part of *Agent Reliability Engineering*. Previous: **02 · Judging the Judge**. Next: **04 · Guardrails**.

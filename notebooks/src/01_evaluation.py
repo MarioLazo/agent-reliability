@@ -277,6 +277,4 @@ print(table([score(sharper, run_agent(m, files=sharper.files))
 #
 # ---
 #
-# Part of *Agent Engineering*. Next: **02 · Context Engineering**, where the
-# window fills up and the quality score falls off a cliff without anything
-# reporting an error.
+# Part of *Agent Reliability Engineering*. Next: **02 · Judging the Judge**.
